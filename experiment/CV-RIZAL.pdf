@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CV</title>
+</head>
+<body>
+<fieldset>
+		
+<nav style="text-align: center;">
+	<a href="home.html">Home</a>	|
+	<a href="Contact.html">Contact</a>	|
+	<a href="About.html">About</a>	|
+	<a href="CV.html">CV</a>	|	
+	<a href="bergabung.html" >Bergabung</a>
+</nav>
+
+	<hr>
+
+	<header style="text-align: center;">
+		<img src="foto-profil.jpg" width="200px" height="200px">
+		<h1>Rizal Sultan Purnama</h1>
+		<p>(Web Developer)</p>
+	</header>
+<hr>
+		<article style="text-align: center;">
+				<h2>Overview</h2>
+
+				<p>Hai, saya adalah web depeloper yang berdomisili di sumedang.
+				saat ini saya sedang belajar membuat web sederhana hanya dengan html</p>
+		</article>
+		<div style="max-width: 600px; margin: 2em auto;">
+			<table border="1" cellspacing="0" cellpadding="1" width="100%">
+				<thead>
+					<tr>
+						<th>SKILL</th>
+						<th>PENGALAMAN</th>
+					</tr>
+				</thead>
+				<tbody>
+					<td>
+						<ul type="circle">
+							<li>HTML (BEGINNER)</li>
+							<li>CSS (BEGINNER)</li>
+						</ul>
+					</td>
+					<td>
+						<ul type="circle">
+							<li>Belum bepengalaman</li>
+							<li>Belum bepengalaman</li>
+						</ul>
+					</td>
+				</tbody>
+			</table>
+			
+		</div>
+		<br><hr>
+		<footer style="text-align: center;">
+			
+<div class="col-md-12">
+	<p><a href="Home.html">Home</a> |
+	<a href="About.html">About Us</a> |
+	<a href="Contact.html">Contact Us</a> 
+	<p> ©2022 All Rights Reserved<br>
+	This site is maintained by <a href="Contact.html" id="author">Rizal Sultan Purnama</a><br>
+	Sumedang - Indonesia </p></div>
+
+		</footer></fieldset>
+</body>
+</html>

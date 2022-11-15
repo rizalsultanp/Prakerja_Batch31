@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <form action="form.html" method="post">
+        <h1>LOGIN</h1>
+
+        <!-- untuk username -->
+
+        <label for="username"> Username: </label>
+        <!-- atribut pattern berfungsi untuk mebuat urutan karakter yang membentuk pola pencarian. Jika input cocok dengan regex, formulir dapat dikirimkan.
+        seperti kita ingin melakukan pembayaran menggunkan rekening yang kolom nya hanya boleh di isi oleh angka -->
+        <input type="text" name="username" id="username" minlength="5" maxlength="15" pattern="a-Za-Z0-9+" required>
+        <!-- atribut minlength / maxlength ini berfungsi untuk memberitahukan si user agar mengisi kolom lebih dari yang di tentukan -->
+        <!-- atribut required berfungsi untuk memberi tahu si user jika ada kolom yang belum di isi -->
+
+        <!-- akhir username -->
+        <br>
+        <br>
+
+        <!-- untuk password -->
+        <label for="user-pas"> Password: </label>
+        <input type="password" name="user-pas" id="user-pas" required>
+        <!-- atribut required berfungsi untuk memberi tahu si user jika ada kolom yang belum di isi -->
+
+        <!-- akhir password -->
+        <br>
+        <br>
+
+        <!-- untuk number -->
+        <label for="number"> Age: </label>
+        <input type="number" id="number" name="age" step="1" min="1" max="18">
+        <!-- atribut step untuk berapa besar setiap perpindahan angka apakah puluhan atau satuan. sedangkan untuk atribut min dan max itu di mulainya dari angka minimum berapa dan batas nya angka maksimumnya -->
+
+        <!-- akhir number -->
+        <br>
+        <br>
+
+        <!-- untuk range -->
+        <label for="range"> Range: </label>
+        <br>
+        <span>Muda</span>
+        <input type="range" name="range" id="range" min="0" max="5" step="0.5">
+        <span>Dewasa</span>
+
+        <!-- akhir range -->
+        <br>
+        <br>
+
+        <!-- untuk checkbox -->
+        <span>Hobby: </span><br>
+        <label for="menyanyi">Menyanyi</label>
+        <input type="checkbox" name="hoby" id="menyanyi" value="menyanyi">
+        <br>
+        <label for="menonton">menonton film</label>
+        <input type="checkbox" name="hoby" id="menonton" value="menonton">
+
+        <!-- akhir checkbox -->
+        <br>
+        <br>
+
+        <!-- untuk radio button / tombol radio  -->
+        <span>Jenis kelamin:</span>
+        <br>
+        <label for="laki-laki">Laki-laki</label>
+        <input type="radio" name="gender" id="laki-laki" value="laki-laki">
+        <br>
+        <label for="perempuan">Perempuan</label>
+        <input type="radio" name="gender" id="perempuan" value="perempuan">
+
+        <!-- akhir radio button -->
+        <br>
+        <br>
+
+        <!-- untuk dropdown -->
+        <span>makanan kesukaan:</span>
+        <label for="dropdown"></label>
+        <select name="kesukaan" id="dropdown">
+            <option value="kosong"></option>
+            <option value="jus">jus</option>
+            <option value="nasi-goreng">nasi goreng</option>
+            <option value="mie-ayam">mie ayam</option>
+        </select>
+
+        <!-- akhir dropdown -->
+        <br>
+        <br>
+
+        <!-- untuk datalist -->
+        <!-- <span>Alamat:</span> -->
+        <label for="alamat"></label>
+        <input type="text" list="cities" id="alamat" name="alamat">
+        <datalist id="cities">
+            <option value="aaa">aaa</option>
+            <option value="bbb">bbb</option>
+            <option value="ccc">ccc</option>
+        </datalist>
+
+        <!-- akhir datalist -->
+        <br>
+        <br>
+
+        <!-- untuk text area -->
+        <label for="extra">text area</label>
+        <br>
+        <textarea name="extra" id="extra" cols="40" rows="5" placeholder="comment...."></textarea>
+
+        <!-- akhir text area -->
+        <br>
+        <br>
+        <!-- send form -->
+        <section class="submit">
+            <input type="submit">
+        </section>
+        <!-- akhir send form -->
+        <br>
+        <br>
+    </form>
+
+</body>
+
+</html>

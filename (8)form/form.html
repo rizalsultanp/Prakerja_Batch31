@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>form</title>
+</head>
+
+<body background="test.jpg">
+
+	<form action="form2.html" method="post">
+		<!-- atribut action = menentukan kemana informasi dikirim -->
+		<!-- atribut method = diberi kata kerja HTTP yang di sertakan
+		dalam permintaan HTTP -->
+		<pre>
+
+<label for="username">username</label>
+<input type="text" id="username">
+<br>
+<label for="password">password</label>
+<input type="password" id="password">
+<br>
+<p>jenis kelamin:<p/><input type="radio" id="pria" name="jenis kelamin"><label for="pria">pria</label>
+<input type="radio" id="perempuan" name="jenis kelamin"><label for="perempuan">perempuan</label>
+
+<p>hobby:</p><input type="checkbox" id="makan"><label for="makan">makan</label>
+<input type="checkbox" id="tidur"><label for="tidur">tidur</label>
+<input type="checkbox" id="game"><label for="game">game</label>
+<input type="checkbox" id="lainnya"><label for="lainnya">lainnya:</label>
+
+<textarea ></textarea>
+<select>
+	<option>BANDUNG</option>
+	<option>JAKARTA</option>
+	<option>SURABAYA</option>
+	<option>KALIMANTAN</option>
+</select></pre>
+		<br>
+		<button type="submit" id="kirim"><a href="select.html">kirim</a></button>
+		<button type="submit" id="reset">reset </button>
+	</form>
+</body>
+
+</html>
